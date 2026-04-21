@@ -1,6 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo, Aku [Nama Bayi]!</title>
+    <style>
+        /* CSS Internal */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f9f7f2; /* Warna latar lembut */
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #d4eadd; /* Hijau mint lembut (Ganti ke #fbc7d4 untuk pink) */
+            padding: 60px 0 80px 0;
+            text-align: center;
+            clip-path: ellipse(100% 55% at 50% 45%);
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 8px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        h1 {
+            margin: 20px 0 5px 0;
+            font-size: 2.2rem;
+            color: #2d5a4c;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #5a8d7a;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin-top: -40px; /* Membuat konten naik ke area header */
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px 10px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .stat-card span {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #999;
+            letter-spacing: 1px;
+        }
+
+        .stat-card strong {
+            display: block;
+            font-size: 1.1rem;
+            color: #d4a373;
+            margin-top: 5px;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .content-section h2 {
+            color: #2d5a4c;
+            border-bottom: 2px dashed #d4eadd;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        footer {
+            margin: 40px 0;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .heart {
+            color: #e76f51;
+        }
+    </style>
+</head>
 <body>
-    <h1>Halo Dunia! Ini GitHub Pages saya.</h1>
+
+    <header>
+        <img src="https://via.placeholder.com/180" alt="Foto Bayi" class="profile-pic">
+        <h1>Halo, Aku [Nama]!</h1>
+        <p class="tagline">Petualangan kecil dimulai di sini ✨</p>
+    </header>
+
+    <div class="container">
+        <section class="stats-grid">
+            <div class="stat-card">
+                <span>Lahir</span>
+                <strong>12 Mei 2024</strong>
+            </div>
+            <div class="stat-card">
+                <span>Berat</span>
+                <strong>3.2 kg</strong>
+            </div>
+            <div class="stat-card">
+                <span>Tinggi</span>
+                <strong>50 cm</strong>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Tentang Aku</h2>
+            <p>Halo semuanya! Aku adalah anggota terbaru di keluarga ini. Saat ini kegiatanku sehari-hari adalah belajar mengenali suara Ayah dan Bunda, mencoba meraih benda di sekitarku, dan tentu saja... tidur dengan nyenyak!</p>
+            <p>Setiap hari adalah petualangan baru bagiku. Terima kasih sudah mampir untuk melihat pertumbuhanku.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Hal Favorit</h2>
+            <ul>
+                <li>Mendengarkan lagu pengantar tidur</li>
+                <li>Melihat mainan gantung warna-warni</li>
+                <li>Waktu mandi air hangat</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        Dibuat dengan <span class="heart">❤</span> oleh Ayah & Bunda
+    </footer>
+
 </body>
 </html>
